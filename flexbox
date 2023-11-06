@@ -1,1 +1,25 @@
 # Everything you need to know about flexbox in simple words
+
+display: flex; 
+- Flexbox creates a container, the container has items
+- Flex items occupy the size they are of the size (they don't grow or shrink automatically)
+
+flex-grow: 1
+- if each of the items has flex-grow: 1, each of the items will ocupy similar size to fill the whole flexbox container
+
+- without grow, each flexbox item -> div will only ocopy the space it needs for its own content, here only for a number 1,2,3
+```
+<div class="flex border">
+  <div class="border">1</div>
+  <div class="border">2</div>
+  <div class="border">3</div>
+</div>
+```
+- with grow, each flexbox item will grow to a similar size to fill the whole flexbox container
+```
+<div class="flex border">
+  <div class="border grow">1</div>
+  <div class="border grow">2</div>
+  <div class="border grow">3</div>
+</div>
+```
