@@ -23,3 +23,12 @@ flex-grow: 1
   <div class="border grow">3</div>
 </div>
 ```
+
+- adding grow-0, the flex item will not grow to fill the space inside the flexbox container, the div 1 and div 3 will grow to fill all the remaining space
+```
+<div class="flex border">
+  <div class="border grow">1</div>
+  <div class="border grow-0">2</div>
+  <div class="border grow">3</div>
+</div>
+```
