@@ -33,3 +33,14 @@ flex-grow: 1
 </div>
 ```
 - flexbox is responsive and grows with the size of the screen and shrinks with the size of the screen
+
+- flex basis sets the main initial size of the item
+- there are other sizes such as basis-auto, sets the items size to the size it needs for the inner content
+- basis-1/2 sets the item size to 50%, if the first div has basis-1/2 the other divs will split the rest 50% so each gets 25%.
+```
+<div class="flex border">
+  <div class="border basis-4">1</div> <!-- basis-4 = 1rem = 16px -->
+  <div class="border basis-24">2</div> <!-- basis-24 = 8rem = 128px -->
+  <div class="border basis-64">3</div> <!-- basis-64 = 16rem = 256px -->
+</div>
+```
